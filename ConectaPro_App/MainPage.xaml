@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConectaPro_App.MainPage"
+             BackgroundImageSource="tela_inicial.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout
+      Grid.Row="1"
+      Padding="30"
+      VerticalOptions="End"
+      HorizontalOptions="Center"
+      Spacing="15">
+
+            <HorizontalStackLayout
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          Spacing="10">
+
+                <Image
+              Source="conectapro_logo.png"
+              HeightRequest="150"
+              WidthRequest="150"
+              Aspect="AspectFit"
+              HorizontalOptions="Fill"
+              VerticalOptions="Center" />
+
+              
+            </HorizontalStackLayout>
+
+            <Label
+          Text="Bem vindo!"
+          FontSize="24"
+          TextColor="White"
+          HorizontalOptions="Center"
+          FontAttributes="Bold" />
+
+            <Label
+          Text="Transformando a forma como você conecta serviços ao seu dia a dia."
+          FontSize="14"
+          TextColor="White"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center" />
+
+            <Button
+          Text="Entrar"
+          BackgroundColor="White"
+          TextColor="Black"
+          CornerRadius="20"
+          HorizontalOptions="Center"
+          WidthRequest="200" />
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
